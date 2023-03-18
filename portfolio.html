@@ -1,117 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <title>Webstudio</title>
-</head>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+  </head>
 
-<body>
-  <header class="header">
+  <body>
+    <header class="header">
       <div class="container">
         <div class="navbar">
           <a class="logo-top" href="./index.html"
             ><span class="web-top">web</span
             ><span class="studio-top">studio</span></a
           >
+
+          <ul class="nav-list menu">
+            <li class="nav-item">
+              <a class="nav-text" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text portfolio" href="">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="address-list menu">
+            <li class="address-item">
+              <a class="address-text" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-text tel" id="contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
           <button
-            class="menu-button is-open"
-            type="button"
+            class="menu-open js-open-menu"
             aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-botton
+            aria-controls="mobile-menu"
           >
-            <svg
-              width="32"
-              height="22"
-              class="mobile-menu"
-              aria-label="mobile-menu"
-            >
-              <use
-                width="32"
-                height="22"
-                class="icon-menu"
-                href="./images/icons.svg#icon-hamburger"
-              ></use>
-              <use
-                width="8"
-                height="8"
-                class="icon-cross"
-                href="./images/icons.svg#icon-cross"
-              ></use>
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger"></use>
             </svg>
           </button>
-          <div class="menu-container is-open" id="menu-container" data-menu>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-text" href="./index.html">Studio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text portfolio" href="">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text contacts" href="#contact">Contacts</a>
-              </li>
-            </ul>
-            <ul class="address-list">
-              <li class="address-item">
-                <a class="address-text" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address-item">
-                <a
-                  class="address-text tel"
-                  id="contact"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-            <ul class="top-network-list">
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagramb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitterb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebookb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedinb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        </div>
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="menu-close js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-text" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text portfolio" href="">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text" href="#tel">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="address-list">
+            <li class="address-item">
+              <a class="address-text" id="tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-text" href="mailto:info@devstudio.com"
+                >info@devstudio. com</a
+              >
+            </li>
+          </ul>
+          <ul class="top-network-list">
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagramb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitterb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebookb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedinb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
 
-  <main>
+    <main>
     <section class="projects">
       <div class="container">
         <ul class="filters-list">
@@ -235,7 +249,7 @@
     </section>
   </main>
 
-   <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="foot">
           <div class="foot-logo">
@@ -248,6 +262,7 @@
               with digital<br />marketing & growth solutions.
             </p>
           </div>
+
           <div class="foot-network">
             <h3 class="foot-network-text">Social media</h3>
             <ul class="foot-network-list">
@@ -296,7 +311,7 @@
         </div>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
-</body>
 
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
 </html>

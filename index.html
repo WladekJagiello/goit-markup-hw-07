@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,7 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Webstudio</title>
   </head>
 
@@ -26,91 +23,104 @@
             ><span class="web-top">web</span
             ><span class="studio-top">studio</span></a
           >
+
+          <ul class="nav-list menu">
+            <li class="nav-item">
+              <a class="nav-text studio" href="">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="address-list menu">
+            <li class="address-item">
+              <a class="address-text" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-text tel" id="contact" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
           <button
-            class="menu-button is-open"
-            type="button"
+            class="menu-open js-open-menu"
             aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-botton
+            aria-controls="mobile-menu"
           >
-            <svg
-              width="32"
-              height="22"
-              class="mobile-menu"
-              aria-label="mobile-menu"
-            >
-              <use
-                width="32"
-                height="22"
-                class="icon-menu"
-                href="./images/icons.svg#icon-hamburger"
-              ></use>
-              <use
-                width="8"
-                height="8"
-                class="icon-cross"
-                href="./images/icons.svg#icon-cross"
-              ></use>
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger"></use>
             </svg>
           </button>
-          <div class="menu-container is-open" id="menu-container" data-menu>
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-text studio" href="">Studio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-text contacts" href="#contact">Contacts</a>
-              </li>
-            </ul>
-            <ul class="address-list">
-              <li class="address-item">
-                <a class="address-text" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="address-item">
-                <a
-                  class="address-text tel"
-                  id="contact"
-                  href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-            <ul class="top-network-list">
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagramb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitterb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebookb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a class="top-network-icons" href="">
-                  <svg width="24" height="24">
-                    <use href="./images/icons.svg#icon-linkedinb"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+        </div>
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="menu-close js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-text studio" href="">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text" href="#tel">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="address-list">
+            <li class="address-item">
+              <a class="address-text" id="tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="address-text" href="mailto:info@devstudio.com"
+                >info@devstudio. com</a
+              >
+            </li>
+          </ul>
+          <ul class="top-network-list">
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagramb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitterb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebookb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="top-network-icons" href="">
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedinb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -124,6 +134,71 @@
           </button>
         </div>
       </section>
+
+      <!-- modal -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close" data-modal-close>
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <b class="modal-text">
+            Leave your contacts and we will call you back
+          </b>
+
+          <form class="form">
+            <div class="form-field">
+              <label class="form-label" for="name">Name</label>
+              <input class="form-input" type="name" name="name" />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="tel">Phone</label>
+              <input class="form-input" type="tel" name="tel" />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-input" type="email" name="email" />
+              <svg class="form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="comment">Comment</label>
+              <textarea
+                class="form-input"
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+
+            <div class="form-check">
+              <label class="check-label"
+                ><input class="checkbox" type="checkbox" />I accept the terms
+                and conditions of the
+              </label>
+              <a class="privacy-policy" href="">Privacy Policy</a>
+            </div>
+            <div class="form-button">
+              <button class="form-button-text" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- modal -->
 
       <section class="featurs">
         <div class="container">
@@ -176,38 +251,6 @@
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="samples">
-        <div class="container">
-          <h2 class="samples-text">What are we doing</h2>
-          <ul class="samples-list">
-            <li class="samples-item">
-              <img
-                src="./images/img1.jpg"
-                srcset="./images/img1.jpg 1x, ./images/712@2x.jpg 2x"
-                alt="monitor"
-                width="360"
-              />
-            </li>
-            <li class="samples-item">
-              <img
-                src="./images/img2.jpg"
-                srcset="./images/img2.jpg 1x, ./images/711@2x.jpg 2x"
-                alt="smartphone"
-                width="360"
-              />
-            </li>
-            <li class="samples-item">
-              <img
-                src="./images/img3.jpg"
-                srcset="./images/img3.jpg 1x, ./images/71@2x.jpg 2x"
-                alt="smartphone and laptop"
-                width="360"
-              />
             </li>
           </ul>
         </div>
@@ -503,66 +546,6 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="close" data-modal-close>
-          <svg class="close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <b class="modal-text">
-          Leave your contacts and we will call you back
-        </b>
-
-        <form class="form">
-          <div class="form-field">
-            <label class="form-label" for="name">Name</label>
-            <input class="form-input" type="name" name="name" />
-            <svg class="form-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
-
-          <div class="form-field">
-            <label class="form-label" for="tel">Phone</label>
-            <input class="form-input" type="tel" name="tel" />
-            <svg class="form-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-
-          <div class="form-field">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-input" type="email" name="email" />
-            <svg class="form-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-
-          <div class="form-field">
-            <label class="form-label" for="comment">Comment</label>
-            <textarea
-              class="form-input"
-              name="comment"
-              rows="5"
-              placeholder="Text input"
-            ></textarea>
-          </div>
-
-          <div class="form-check">
-            <label class="check-label"
-              ><input class="checkbox" type="checkbox" />I accept the terms and
-              conditions of the
-            </label>
-            <a class="privacy-policy" href="">Privacy Policy</a>
-          </div>
-          <div class="form-button">
-            <button class="form-button-text" type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </div>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
