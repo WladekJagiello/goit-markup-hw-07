@@ -1167,7 +1167,6 @@ textarea::placeholder {
     margin-right: 24px;
     margin-bottom: 16px;
     justify-content: center;
-    z-index: 1;
   }
 
   .projects-item {
