@@ -1067,6 +1067,7 @@ textarea::placeholder {
 
   .featurs-direction {
     text-align: center;
+    width: 100%;
   }
 
   /* samples */
