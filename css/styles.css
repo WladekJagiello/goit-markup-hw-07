@@ -557,7 +557,6 @@ textarea::placeholder {
 .customers-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 72px;
 }
 
 .customers-items {
@@ -1095,7 +1094,6 @@ textarea::placeholder {
   .customers-list {
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 0;
   }
 
   .customers-items {
