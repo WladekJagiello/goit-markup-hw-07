@@ -1195,6 +1195,10 @@ textarea::placeholder {
   .projects-item:focus .hidden-text {
     z-index: -1;
   }
+
+  .projects-img img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
