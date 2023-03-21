@@ -158,6 +158,7 @@ main {
 }
 
 .hero-text {
+  width: 100%;
   font-weight: var(--font-weight-hh);
   font-size: 56px;
   line-height: var(--line-height-hh);
@@ -436,6 +437,11 @@ textarea::placeholder {
 .featurs-list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.featurs-item {
+  width: 100%;
 }
 
 .featurs-direction {
@@ -907,6 +913,7 @@ textarea::placeholder {
     height: 100%;
     padding-top: 80px;
     padding-left: 40px;
+    padding-right: 15px;
     padding-bottom: 40px;
     display: none;
     font-weight: var(--font-weight-h);
