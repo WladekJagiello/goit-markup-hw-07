@@ -972,7 +972,6 @@ textarea::placeholder {
   .contacts-container {
     width: 100%;
     padding-right: 40px;
-    padding-bottom: 40px;
   }
 
   .nav-text:hover {
