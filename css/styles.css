@@ -866,8 +866,6 @@ textarea::placeholder {
 @media (max-width: 767px) {
   .container {
     max-width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .header {
@@ -928,10 +926,6 @@ textarea::placeholder {
     z-index: 2;
   }
 
-  .mabile {
-    position: relative;
-  }
-
   .menu-close {
     position: absolute;
     right: 24px;
@@ -967,8 +961,11 @@ textarea::placeholder {
     color: var(--ocean);
   }
 
-  .address-list {
-    margin-top: 300px;
+  .contacts-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   .address-item:not(:last-child) {
@@ -983,7 +980,7 @@ textarea::placeholder {
     color: var(--slate);
   }
 
-  .address-text:hover {
+  .number {
     font-weight: var(--font-weight-hh);
     font-size: var(--font-size-hh);
     line-height: var(--line-height-hh);
@@ -1092,6 +1089,7 @@ textarea::placeholder {
   .customers-list {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 0;
   }
 
   .customers-items {
@@ -1117,9 +1115,8 @@ textarea::placeholder {
   }
 
   .logo-bottom {
-    position: relative;
-    left: 73px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .foot-network {
@@ -1179,8 +1176,6 @@ textarea::placeholder {
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .header {
@@ -1270,7 +1265,7 @@ textarea::placeholder {
   .team-item {
     margin-top: 64px;
     margin-right: 12px;
-    margin-right: 12px;
+    margin-left: 12px;
   }
 
   /* customers */
@@ -1434,6 +1429,10 @@ textarea::placeholder {
     font-size: var(--font-size-h);
     line-height: var(--line-height-h);
     letter-spacing: var(--letter-spacing-p);
+  }
+
+  .featurs-text {
+    font-weight: 400;
   }
 
   /* samples */
