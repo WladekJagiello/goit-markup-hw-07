@@ -1077,6 +1077,12 @@ textarea::placeholder {
 
   .team-item {
     margin-top: 72px;
+    width: 100%;
+  }
+
+  .team-item img {
+    display: block;
+    width: 100%;
   }
 
   /* customers */
@@ -1106,6 +1112,7 @@ textarea::placeholder {
   }
 
   .foot {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1129,6 +1136,7 @@ textarea::placeholder {
   }
 
   .subscribe {
+    width: 100%;
     margin-left: 0;
   }
 
@@ -1140,6 +1148,10 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .foot-input {
+    width: 100%;
   }
 
   .foot-button {
