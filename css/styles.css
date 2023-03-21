@@ -814,7 +814,6 @@ textarea::placeholder {
   background: var(--iris);
   mix-blend-mode: normal;
   transform: translateY(100%);
-  transform: translateY(100%);
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1191,6 +1190,11 @@ textarea::placeholder {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .projects-item:hover .hidden-text,
+  .projects-item:focus .hidden-text {
+    z-index: -1;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1355,6 +1359,11 @@ textarea::placeholder {
 
   .projects-item {
     margin-bottom: 72px;
+  }
+
+  .projects-item:hover .hidden-text,
+  .projects-item:focus .hidden-text {
+    z-index: -1;
   }
 }
 
